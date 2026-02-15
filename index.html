@@ -6,10 +6,69 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>DOM DOMA EVENT</h1>
+
+        <button onclick="console.log(75)">Click me</button>
+        <button onclick="console.log(12354)">Another button</button>
+        <button onclick="console.log('i am a mern wed devloper')">third button</button>
+        <input type="text">
+        <br>
+
+        <!-- ..///? -->
+
+        <button onclick="MakeYellow()">Make Yollow</button>
+        <button onclick="makeRed()">make Red</button>
+        <button onclick="makeBlue()">make Blue</button>
+        <button onclick="makeBlack()">make Black</button>
+        <br>
+
+        <!-- !...// -->
+         <button id="btn-make-blue">Make Blue</button>
+
+         
+
+        
+
+
+        <script>
+
+            function MakeYellow(){
+                document.body.style.backgroundColor = 'yellow';
+                document.body.style.color = 'red';
+
+            }
+            function makeRed (){
+                document.body.style.backgroundColor = 'red';
+                document.body.style.color = 'blue';
+
+            }
+            function makeBlue(){
+                document.body.style.backgroundColor = 'blue';
+                document.body.style.color = 'yellow';
+
+            }
+            function makeBlack(){
+                document.body.style.backgroundColor = 'black';
+                document.body.style.color = 'red';
+                
+
+            }
+            const btnMakeBlue = document.getElementById('btn-make-blue')
+            console.log(btnMakeBlue);
+            btnMakeBlue.onClick = function makeBlue(){
+                document.body.style.backgroundColor = 'blue';
+            }
+        </script>
+
+
+
+
+    
+
 
     
     <!-- js.... -->
-    <script src="js/script.js"></script>
+    <script src="js/events.js"></script>
     <!-- js.... -->
 </body>
 </html>
